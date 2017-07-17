@@ -1,14 +1,14 @@
 <link href='https://fonts.googleapis.com/css?family=Nosifer|League+Script|Yellowtail|Permanent+Marker|Codystar|Eater|Molle:400italic|Snowburst+One|Shojumaru|Frijole|Gloria+Hallelujah|Calligraffitti|Tangerine|Monofett|Monoton|Arbutus|Chewy|Playball|Black+Ops+One|Rock+Salt|Pinyon+Script|Orbitron|Sacramento|Sancreek|Kranky|UnifrakturMaguntia|Creepster|Pirata+One|Seaweed+Script|Miltonian|Herr+Von+Muellerhoff|Rye|Jacques+Francois+Shadow|Montserrat+Subrayada|Akronim|Faster+One|Megrim|Cedarville+Cursive|Ewert|Plaster' rel='stylesheet' type='text/css'>
 
-<link href="tdesignAPI/css/api.css" rel="stylesheet">
+<link href="grapetee/tdesignAPI/css/api.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script type="text/javascript" src="tdesignAPI/js/html2canvas.js"></script>
+<script type="text/javascript" src="grapetee/tdesignAPI/js/html2canvas.js"></script>
 
-<script src="tdesignAPI/js/jquery.form.js"></script>
-<script src="tdesignAPI/js/mainapp.js"></script>
-<link rel="stylesheet" href="tdesignAPI/css/jquery-ui.css" />
-<script src="tdesignAPI/js/jquery-ui.js"></script>
+<script src="grapetee/tdesignAPI/js/jquery.form.js"></script>
+<script src="grapetee/tdesignAPI/js/mainapp.js"></script>
+<link rel="stylesheet" href="grapetee/tdesignAPI/css/jquery-ui.css" />
+<script src="grapetee/tdesignAPI/js/jquery-ui.js"></script>
 
 <script type="text/javascript">
 	function changeval() {
@@ -79,11 +79,11 @@
 		<!--=============================================================-->
 		<div id='options'>
 			<div class="T_type">
-				<div id="radio1" ><img src="tdesignAPI/images/menu_icons/submenu/tee.jpg" width="100%" height="100%" />
+				<div id="radio1" ><img src="grapetee/tdesignAPI/images/menu_icons/submenu/tee.jpg" width="100%" height="100%" />
 				</div>
-				<!--<div id="radio2" ><img src="tdesignAPI/images/menu_icons/submenu/collar.jpg" width="100%" height="100%" />
+				<!--<div id="radio2" ><img src="grapetee/tdesignAPI/images/menu_icons/submenu/collar.jpg" width="100%" height="100%" />
 				</div>-->
-				<div id="radio3" ><img src="tdesignAPI/images/menu_icons/submenu/hoodie.jpg" width="100%" height="100%" />
+				<div id="radio3" ><img src="grapetee/tdesignAPI/images/menu_icons/submenu/hoodie.jpg" width="100%" height="100%" />
 				</div>
 			</div>
 
@@ -98,13 +98,13 @@
 
 				
 <?php
-	$dir    = 'tdesignAPI/images/Images';
+	$dir    = 'public/grapetee/tdesignAPI/images/Images';
 	$files1 = scandir($dir);
 	//$files2 = scandir($dir, 1);
 	foreach ($files1 as &$value) {
 		if (strpos($value,'.png') !== false) {
     		//echo 'true';
-			echo '<div class="sample_icons"><img src="tdesignAPI/images/Images/' .$value. '" width="100%" height="100%" /></div>' ;
+			echo '<div class="sample_icons"><img src="grapetee/tdesignAPI/images/Images/' .$value. '" width="100%" height="100%" /></div>' ;
 		}elseif(strpos($value,'.') === false){
 			//echo '<div class="sample_icons"><img src="tdesignAPI/images/folder.png" width="100%" height="100%" />' .$value. '</div>' ;
 		}
@@ -215,9 +215,9 @@
 		<!--======================view start=======================================-->
 
 		<div id='view_mode'>
-			<div  class="mode"><img id="o_front" src="tdesignAPI/images/product/tee/black/black_front.png" width="100%" height="80%" />FRONT
+			<div  class="mode"><img id="o_front" src="grapetee/tdesignAPI/images/product/tee/black/black_front.png" width="100%" height="80%" />FRONT
 			</div>
-			<div  class="mode"><img id="o_back" src="tdesignAPI/images/product/tee/black/black_back.png" width="100%" height="80%" />BACK
+			<div  class="mode"><img id="o_back" src="grapetee/tdesignAPI/images/product/tee/black/black_back.png" width="100%" height="80%" />BACK
 			</div>
 			<div class="mode">
 				<i class="fa fa-binoculars fa-4x preview_images" id="preview_images" data-toggle="modal" data-target=".bs-example-modal-lg"></i>Preview
